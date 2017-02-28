@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/myfans_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/moren"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/myfans_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myfans_img"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/myfans_img"
+        android:layout_marginBottom="10dp"
+        android:textSize="13dp"
+        android:text="XXX"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/myfans_fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myfans_img"
+        android:layout_alignLeft="@+id/myfans_name"
+        android:layout_alignStart="@+id/myfans_name"
+        android:text="粉丝:"
+        android:textSize="13dp"
+        android:textColor="#666666"/>
+
+    <TextView
+        android:id="@+id/myfans_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/myfans_fans"
+        android:layout_alignBottom="@+id/myfans_img"
+        android:text="0"
+        android:textSize="13dp"
+        android:textColor="#666666"
+        />
+
+
+    <TextView
+        android:id="@+id/myfans_guanzhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myfans_img"
+        android:layout_toRightOf="@+id/myfans_text1"
+        android:layout_marginLeft="20dp"
+        android:text="关注:"
+        android:textSize="13dp"
+        android:textColor="#666666"/>
+
+
+
+    <TextView
+        android:id="@+id/myfans_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myfans_img"
+        android:layout_toRightOf="@+id/myfans_guanzhu"
+        android:text="0"
+        android:textSize="13dp"
+        android:textColor="#666666"/>
+
+   <!-- <ImageView
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/right"/>-->
+
+
+</RelativeLayout>

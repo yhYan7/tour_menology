@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/grid_img"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:layout_height="120dp"
+        android:src="@mipmap/moren2"/>
+
+    <com.example.administrator.tour_menology.date.CircleImageView
+        android:id="@+id/grid_img2"
+        android:layout_width="30dp"
+        android:scaleType="fitXY"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/grid_title"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/grid_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/grid_img2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/grid_img2"
+        android:layout_toRightOf="@+id/grid_img2"
+        android:text="呵呵呵呵"
+        android:textColor="#666666"/>
+
+    <TextView
+        android:id="@+id/grid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="9"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="天津三日旅游推荐"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_below="@+id/grid_img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>

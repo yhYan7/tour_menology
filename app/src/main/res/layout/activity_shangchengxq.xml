@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shangchengxq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.tour_menology.Activity.shangchengxq">
+
+
+    <include layout="@layout/toolbar_2"
+        android:id="@+id/include12"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/chanpinxp_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@mipmap/moren2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="有效期: "
+                    android:textColor="#fff"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/chanpinxp_shi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="长期有效"
+                    android:textColor="#fff"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 至 "
+                    android:textColor="#fff"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/chanpinxp_mo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="长期有效"
+                    android:textColor="#fff"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:id="@+id/chanpinxp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="XXXXXXXX"
+            android:textColor="#333333"
+            android:textSize="18dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/chanpinxp_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="2000"
+                android:textColor="#fb8149"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47dp"
+                android:text="积分"
+                android:textColor="#fb8149"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/chanpinxp_zhangshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginRight="10dp"
+                android:text="5"
+                android:textColor="#666666"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginRight="25dp"
+                android:text="剩余张数:"
+                android:textColor="#666666"
+                android:textSize="16dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="景区介绍"
+            android:textColor="#333333"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/chanpinxp_jieshao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="的归属感的风格的风格的发生过水电费"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e5e5e5"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="查看更多产品>"
+            android:textColor="#34bcec"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#e5e5e5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="兑换规则"
+            android:textColor="#333333"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/chanpinxp_guize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="fgjhgj "
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/button_youqian"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:layout_height="50dp"
+            android:background="@drawable/denglu_button"
+            android:text="兑换"
+            android:textColor="#fff"/>
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/button_meiqian"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="积分不足"
+            android:textColor="#fff"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

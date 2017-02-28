@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.tour_menology.Activity.youji_pinglun">
+
+    <include layout="@layout/toolbar_2"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/yjxq_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/yjxq_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#333333"
+                android:textSize="18dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/date"/>
+
+                <TextView
+                    android:id="@+id/yjxq_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/imageView10"
+                    android:layout_toRightOf="@+id/imageView10"
+                    android:textColor="#333333"
+                    android:textSize="18dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/imageView10"
+                    android:layout_toLeftOf="@+id/yjxq_address"
+                    android:layout_toStartOf="@+id/yjxq_address"
+                    android:background="@mipmap/address"/>
+
+                <TextView
+                    android:id="@+id/yjxq_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="天津市"
+                    android:textColor="#333333"
+                    android:textSize="18dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#e5e5e5"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="喜欢"
+                    android:textColor="#333333"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="人"
+                    android:textColor="#333333"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/yjxq_xihuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="28dp"
+                    android:text="0"
+                    android:textColor="#333333"
+                    android:textSize="18dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.administrator.tour_menology.date.henglistview
+                    android:id="@+id/yjpl_listview_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#e5e5e5"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="评论"
+                    android:textColor="#333333"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="条"
+                    android:textColor="#333333"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/yjxq_pltiaomu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="28dp"
+                    android:text="0"
+                    android:textColor="#333333"
+                    android:textSize="18dp"/>
+            </RelativeLayout>
+            <TextView
+                android:background="#e5e5e5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <com.example.administrator.tour_menology.date.HeiListView
+                android:id="@+id/yjpl_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.example.administrator.tour_menology.date.HeiListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#e5e5e5"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/yjpl_edt"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edxt"
+                android:layout_marginTop="10dp"
+                android:hint="添加评论"
+                android:layout_marginRight="80dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="50dp"/>
+
+                <Button
+                    android:id="@+id/yjpl_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="60dp"
+                    android:text="评论"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/denglu_yanzheng"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="40dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

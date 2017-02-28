@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.administrator.tour_menology.Fragment.fabu_huodong_Fragment">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="160px"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="4">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/fabu_R1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50px"-->
+                <!--android:layout_height="50px"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:src="@mipmap/fabu_x1"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="100px"-->
+                <!--android:text="日历"-->
+                <!--android:textColor="#666666"-->
+                <!--android:textSize="24px"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/fabu_R2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50px"-->
+                <!--android:layout_height="50px"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:src="@mipmap/fabu_x2"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="100px"-->
+                <!--android:text="全部活动"-->
+                <!--android:textColor="#666666"-->
+                <!--android:textSize="24px"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/fabu_R3"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50px"-->
+                <!--android:layout_height="50px"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:src="@mipmap/fabu_x3"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="100px"-->
+                <!--android:text="往期活动"-->
+                <!--android:textColor="#666666"-->
+                <!--android:textSize="24px"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/fabu_R4"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50px"-->
+                <!--android:layout_height="50px"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:src="@mipmap/fabu_x4"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="100px"-->
+                <!--android:text="最新活动"-->
+                <!--android:textColor="#666666"-->
+                <!--android:textSize="24px"/>-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.xiaosu.pulllayout.PullLayout
+        android:id="@+id/huodong_pulllayout"
+        android:divider="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.administrator.tour_menology.date.HeiListView
+            android:id="@+id/huodong_list"
+            android:divider="#e5e5e5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.example.administrator.tour_menology.date.HeiListView>
+
+    </com.xiaosu.pulllayout.PullLayout>
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+</LinearLayout>

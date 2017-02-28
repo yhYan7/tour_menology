@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.tour_menology.Activity.jfshangcheng">
+
+    <include layout="@layout/toolbar_2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/jifen"/>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView12"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imageView12"
+            android:layout_toRightOf="@+id/imageView12"
+            android:text="我的积分:"
+            android:textColor="#333333"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/jifen_jinfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView18"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/textView18"
+            android:layout_toRightOf="@+id/textView18"
+            android:text="20"
+            android:textColor="#333333"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/jifen_gengduo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView12"
+            android:layout_alignStart="@+id/imageView12"
+            android:layout_below="@+id/imageView12"
+            android:layout_marginBottom="19dp"
+            android:layout_marginTop="10dp"
+            android:text="如何获取更多积分"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+        <Button
+            android:id="@+id/jifen_duihuan"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edxt"
+            android:text="兑换记录"
+            android:textColor="#34bcec"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"/>
+
+    <GridView
+        android:id="@+id/jifen_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp">
+    </GridView>
+</LinearLayout>

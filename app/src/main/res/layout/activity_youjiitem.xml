@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_youjiitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.tour_menology.Activity.youjiitem">
+
+    <include layout="@layout/toolbar_2"
+             android:id="@+id/include13"/>
+    
+    <ImageButton
+        android:id="@+id/yjitem_duihao"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:background="@mipmap/dui"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:id="@+id/yjitem_img"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"/>
+            <EditText
+                android:gravity="left|top"
+                android:background="@drawable/edxt"
+                android:id="@+id/yjitem_title"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:background="#e5e5e5"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/date"/>
+
+            <EditText
+                android:id="@+id/yjitem_date"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/edxt"
+                android:focusable="false"
+                android:inputType="none"/>
+        </RelativeLayout>
+
+        <TextView
+            android:background="#e5e5e5"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/address"/>
+
+            <EditText
+                android:id="@+id/yjitem_address"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/edxt"
+                android:hint="请输入地点"/>
+        </RelativeLayout>
+
+
+     <RelativeLayout
+         android:id="@+id/yjitem_shan"
+         android:background="@drawable/denglu_button"
+         android:layout_marginTop="30dp"
+         android:layout_width="match_parent"
+         android:layout_height="50dp">
+
+         <ImageView
+             android:id="@+id/zhong"
+             android:layout_centerHorizontal="true"
+             android:layout_margin="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <ImageView
+             android:layout_alignRight="@+id/zhong"
+             android:background="@mipmap/shanchu2"
+             android:layout_width="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+             android:layout_height="wrap_content"/>
+
+         <TextView
+             android:layout_alignLeft="@+id/zhong"
+             android:layout_centerVertical="true"
+             android:textSize="18dp"
+             android:textColor="#fff"
+             android:text="删除"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+
+     </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

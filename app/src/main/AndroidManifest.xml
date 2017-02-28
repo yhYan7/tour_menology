@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.administrator.tour_menology">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- SDK2.1新增获取用户位置信息 -->
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- mob短信 需要的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> -->
+    <!-- 在application中注册activity -->
+    <!-- &lt;!&ndash; Mob短信（如果使用无GUI的，这个activity应该可以不需要了，自己没试过，就先在这注册着吧） &ndash;&gt; -->
+    <!-- <activity -->
+    <!-- android:name="com.mob.tools.MobUIShell" -->
+    <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+    <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" -->
+    <!-- android:windowSoftInputMode="stateHidden|adjustResize"> -->
+    <!-- </activity> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/title"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 设计稿的宽和高 -->
+        <meta-data
+            android:name="design_width"
+            android:value="768"/>
+        <meta-data
+            android:name="design_height"
+            android:value="1280"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="demo">
+        </activity>
+        <activity android:name=".yindaoye.Guide"/>
+        <activity android:name=".yindaoye.WelcomeAct">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qihoo.appstore.common.updatesdk.lib.UpdateTipDialogActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service
+            android:name="com.qihoo.appstore.updatelib.CheckUpdateService"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!--
+         <activity
+             android:name=".ReturnActivity"
+             >
+         </activity>
+        -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1105591451"/>
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+
+        <!-- 微信第三方登录相关       开始 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+        </activity>
+        <!-- 微信第三方登录相关       结束 -->
+        <!-- 新浪微博登录相关  开始 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- <meta-data android:name="AuthorizeAdapter" android:value="com.example.share.MyAdapter" /> -->
+        </activity>
+        <!-- 微博登录   结束 -->
+
+        <activity android:name=".my_fragment_activity.denglu">
+        </activity>
+        <activity android:name=".my_fragment_activity.zhuce">
+        </activity>
+        <activity android:name=".Activity.main_list2_xiangqing">
+        </activity>
+        <activity android:name=".Activity.ain_list_xiangqing">
+        </activity>
+        <activity android:name=".Activity.main_huodong_activity">
+        </activity>
+        <activity android:name=".Activity.main_fabufang">
+        </activity>
+        <activity android:name=".Activity.main_fabu_xiangqing">
+        </activity>
+        <activity android:name=".Activity.add_task">
+        </activity>
+        <activity android:name=".my_fragment_activity.personalActivity">
+        </activity>
+        <activity android:name=".my_fragment_activity.pcOne">
+        </activity>
+        <activity android:name=".my_fragment_activity.fankui">
+        </activity>
+        <activity android:name=".my_fragment_activity.pcTwo">
+        </activity>
+        <activity android:name=".my_fragment_activity.person1">
+        </activity>
+        <activity android:name=".my_fragment_activity.person2">
+        </activity>
+        <activity android:name=".my_fragment_activity.person3">
+        </activity>
+        <activity android:name=".my_fragment_activity.person4">
+        </activity>
+        <activity android:name=".my_fragment_activity.person5">
+        </activity>
+        <activity android:name=".my_fragment_activity.person6">
+        </activity>
+        <activity android:name=".my_fragment_activity.setupActivity">
+        </activity>
+        <activity android:name=".my_fragment_activity.TestQQ">
+        </activity>
+        <activity android:name=".my_fragment_activity.resetpwd">
+        </activity>
+        <activity android:name=".my_fragment_activity.resetphone">
+        </activity>
+        <activity android:name=".Activity.main_zhaohuodong_Activity">
+        </activity>
+        <activity android:name=".Activity.zhaohuodong_pinglun">
+        </activity>
+        <activity android:name=".my_fragment_activity.myfenxiang">
+        </activity>
+        <activity android:name=".my_fragment_activity.myhuodong">
+        </activity>
+        <activity android:name=".my_fragment_activity.haoyoudongtai">
+        </activity>
+        <activity android:name=".my_fragment_activity.myallyouji">
+        </activity>
+        <activity android:name=".my_fragment_activity.allhaoyouyj">
+        </activity>
+        <activity android:name=".my_fragment_activity.Calendarhuodong">
+        </activity>
+        <activity android:name=".my_fragment_activity.myguanzhu">
+        </activity>
+        <activity android:name=".my_fragment_activity.myfans">
+        </activity>
+        <activity android:name=".my_fragment_activity.myshequ">
+        </activity>
+        <activity android:name=".my_fragment_activity.myshoucang">
+        </activity>
+        <activity android:name=".my_fragment_activity.mypinglu">
+        </activity>
+        <activity android:name=".my_fragment_activity.myyouji">
+        </activity>
+        <activity android:name=".Activity.chakanxiangqing">
+        </activity>
+        <activity android:name=".Activity.jingcaiyouxi">
+        </activity>
+        <activity android:name=".Activity.Viewxiangqing">
+        </activity>
+        <activity android:name=".Activity.gonglue_xiangqing">
+        </activity>
+        <activity android:name=".Calendar.AllCalendar">
+        </activity>
+        <activity
+            android:name=".Activity.all_gonglue"
+            android:label="@string/title_activity_all_gonglue"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".Activity.youjixiangqing">
+        </activity>
+        <activity android:name=".Activity.youji_pinglun">
+        </activity>
+        <activity android:name=".Activity.all_youji">
+        </activity>
+        <activity android:name=".Activity.jfshangcheng">
+        </activity>
+        <activity android:name=".Activity.add_yj">
+        </activity>
+        <activity android:name=".Activity.bianjiyj">
+        </activity>
+        <activity android:name=".Activity.xiesuiji">
+        </activity>
+        <activity android:name=".Activity.jiatupian">
+        </activity>
+        <activity android:name=".Activity.main_list1_xiangqing2">
+        </activity>
+        <activity android:name=".Activity.shangchengxq">
+        </activity>
+        <activity android:name=".Activity.youjiitem">
+        </activity>
+        <activity android:name=".Activity.youjishezhi">
+        </activity>
+        <activity android:name=".Activity.duihuan">
+        </activity>
+        <activity android:name=".Activity.duihuanjl">
+        </activity>
+        <activity android:name=".Activity.renwushuoming">
+        </activity>
+        <activity android:name=".Activity.qiandaoa">
+        </activity>
+        <activity android:name=".Activity.duihuanxinagqing">
+        </activity>
+        <activity android:name=".Activity.zhuye">
+        </activity>
+        <activity android:name=".Activity.shequ">
+        </activity>
+        <activity android:name=".Activity.guanzhu">
+        </activity>
+        <activity android:name=".Activity.fensi">
+        </activity>
+        <activity android:name=".Activity.tadehuodong">
+        </activity>
+        <activity android:name=".Activity.tadeyouji">
+        </activity>
+        <activity android:name=".Activity.map">
+        </activity>
+        <activity android:name=".Activity.jinfenjl">
+        </activity>
+        <activity android:name=".Activity.myfriend">
+        </activity>
+        <activity android:name=".Activity.add_friend">
+        </activity>
+        <activity android:name=".Activity.shijianxq">
+        </activity>
+        <activity android:name=".Activity.renwuxq">
+        </activity>
+        <activity android:name=".Activity.add_shijian">
+        </activity>
+        <activity android:name=".Activity.bianjisj">
+        </activity>
+        <activity android:name=".Activity.bianjirenwu">
+        </activity>
+        <activity android:name=".Activity.sousuo_huodong">
+        </activity>
+    </application>
+
+</manifest>

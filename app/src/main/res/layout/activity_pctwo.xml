@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my_fragment_activity.pcTwo">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/buttonzu"
+        android:layout_below="@+id/include2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_event"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="事件"/>
+
+        <Button
+            android:id="@+id/button_act"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="活动"/>
+
+    </LinearLayout>
+
+    <com.xiaosu.pulllayout.PullLayout
+        android:id="@+id/shijian_pulllayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonzu"
+        >
+
+        <ListView
+            android:id="@+id/shijian_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+        </ListView>
+
+    </com.xiaosu.pulllayout.PullLayout>
+
+    <com.xiaosu.pulllayout.PullLayout
+        android:id="@+id/act_pulllayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonzu"
+        >
+        <ListView
+            android:id="@+id/act_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </ListView>
+
+    </com.xiaosu.pulllayout.PullLayout>
+</RelativeLayout>

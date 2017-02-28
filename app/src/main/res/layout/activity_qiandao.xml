@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qiandao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.tour_menology.Activity.qiandaoa">
+
+<include layout="@layout/toolbar_2"
+    android:id="@+id/include17"
+    />
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffeeeeee"
+        android:orientation="vertical"
+        android:layout_below="@+id/include17">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="#586771" >
+
+            <TextView
+                android:id="@+id/popupwindow_calendar_month"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#586771"
+                android:gravity="center"
+                android:textColor="#aa564b4b"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <com.example.administrator.tour_menology.qiandao.SignCalendar
+            android:id="@+id/popupwindow_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:clickable="false" >
+        </com.example.administrator.tour_menology.qiandao.SignCalendar>
+
+        <Button
+            android:id="@+id/btn_signIn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_sign_bg_selector"
+            android:text="签到"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

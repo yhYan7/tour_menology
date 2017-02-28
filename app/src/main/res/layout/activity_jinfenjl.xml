@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jinfenjl"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.tour_menology.Activity.jinfenjl">
+
+    <include layout="@layout/toolbar_2"/>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/jifen_1"
+            android:background="#6034bcec"
+            android:text="全部"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#333333"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="1dp"
+            android:background="#e5e5e5"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/jifen_2"
+            android:background="#00000000"
+            android:text="获取"
+            android:layout_weight="1"
+            android:textColor="#333333"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="1dp"
+            android:background="#e5e5e5"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/jifen_3"
+            android:background="#00000000"
+            android:text="使用"
+            android:textColor="#333333"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/jifenjl_shiyong"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:textColor="#333333"
+            android:layout_marginRight="10dp"
+            android:text="1700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:textSize="16dp"
+            android:textColor="#999999"
+            android:text="使用:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/jifenjl_shiyong"/>
+
+        <TextView
+            android:id="@+id/jifenjl_huoqu"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:textColor="#333333"
+            android:layout_marginRight="90dp"
+            android:text="444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#999999"
+            android:text="获取:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/jifenjl_huoqu"/>
+
+
+        <TextView
+            android:id="@+id/jifenjl_shengyu"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:textColor="#333333"
+            android:layout_marginRight="160dp"
+            android:text="444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#999999"
+            android:text="剩余:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/jifenjl_shengyu"/>
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/jifenjl_list"
+        android:dividerHeight="1dp"
+        android:divider="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+
+</LinearLayout>

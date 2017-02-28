@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/pl_R1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.example.administrator.tour_menology.date.CircleImageView
+            android:id="@+id/pl_youji_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/pl_youji_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="头像"
+            android:textColor="#333333"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"/>
+
+    <TextView
+        android:id="@+id/pl_youji_neirong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="评论内容"
+        android:textColor="#444444"/>
+
+    <RelativeLayout
+        android:id="@+id/pl_R2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/pl_youji_img2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/moren"/>
+
+        <TextView
+            android:id="@+id/pl_youji_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pl_youji_img2"
+            android:layout_toEndOf="@+id/pl_youji_img2"
+            android:layout_toRightOf="@+id/pl_youji_img2"
+            android:text="被经纬演的weight微服私访"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:text="2013-15-4"
+            android:id="@+id/pl_youji_date"
+            android:textColor="#666666"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pl_youji_img2"
+            android:layout_toRightOf="@+id/pl_youji_img2"
+            android:layout_toEndOf="@+id/pl_youji_img2"/>
+        <TextView
+            android:text="  | "
+            android:textColor="#666666"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pl_youji_img2"
+            android:layout_toRightOf="@+id/pl_youji_date"/>
+        <TextView
+            android:id="@+id/pl_youji_date2"
+            android:text="1"
+            android:textColor="#666666"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pl_youji_img2"
+            android:layout_toRightOf="@+id/pl_youji_date"/>
+        <TextView
+            android:text="天 | "
+            android:textColor="#666666"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pl_youji_img2"
+            android:layout_toRightOf="@+id/pl_youji_date2"/>
+        <TextView
+            android:id="@+id/pl_youji_address"
+            android:text="天津市"
+            android:textColor="#666666"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pl_youji_img2"
+            android:layout_toRightOf="@+id/pl_youji_date2"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

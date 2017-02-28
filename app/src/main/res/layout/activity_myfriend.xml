@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_myfriend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.tour_menology.Activity.myfriend">
+
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar_2"/>
+
+    <ImageButton
+        android:id="@+id/friend_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="13dp"
+        android:background="@mipmap/addfriend"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar1">
+
+        <RelativeLayout
+            android:id="@+id/chaxun_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/include4"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/friend_edt"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edxt"
+                android:hint="请输入你要查询的好友"
+                android:paddingLeft="15dp"/>
+
+            <ImageButton
+                android:id="@+id/friend_seatch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/search2"
+                android:text="查询"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5"/>
+
+        <ListView
+            android:id="@+id/haoyou_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#e5e5e5"
+            android:dividerHeight="1dp">
+        </ListView>
+    </LinearLayout>
+
+
+</RelativeLayout>

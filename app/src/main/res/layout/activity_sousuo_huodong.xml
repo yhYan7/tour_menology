@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sousuo_huodong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.tour_menology.Activity.sousuo_huodong">
+    <include
+        android:id="@+id/include4"
+        layout="@layout/toolbar_2"/>
+    <RelativeLayout
+        android:id="@+id/chaxun_R"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/chaxun_edt"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/edxt"
+            android:hint="请输入你要查询的内容"
+            android:paddingLeft="15dp"/>
+
+        <Button
+            android:id="@+id/chaxun_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="查询"/>
+
+
+    </RelativeLayout>
+
+    <com.xiaosu.pulllayout.PullLayout
+        android:id="@+id/zhaohuodong_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/zhaohuodong_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </com.xiaosu.pulllayout.PullLayout>
+
+</LinearLayout>

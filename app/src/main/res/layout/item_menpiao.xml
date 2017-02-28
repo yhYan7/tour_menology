@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:background="#e3e3e3"
+        android:id="@+id/item_mp_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/item_mp_title"
+        android:text="崂山风景名胜门票"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="7dp"
+        android:textColor="#333333"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#fe8149"
+            android:id="@+id/item_mp_jifen"
+            android:text="1000"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#fe8149"
+            android:layout_marginLeft="33dp"
+            android:text="积分"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="14dp"
+            android:textColor="#666666"
+            android:text="剩余张数:"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_mp_zhangshu"
+            android:textSize="16dp"
+            android:textColor="#666666"
+            android:text="45"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

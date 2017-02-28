@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.administrator.tour_menology.Activity.main_huodong_activity">
+
+    <include layout="@layout/toolbar_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/main_huodong_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <ImageView
+                    android:layout_margin="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/main_r1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="生活"
+                    android:textColor="#333333"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/main_huodong_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <ImageView
+                    android:layout_margin="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/main_r4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="社交"
+                    android:textColor="#333333"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/main_huodong_7"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <ImageView
+                    android:layout_margin="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/main_r7"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="亲子"
+                    android:textColor="#333333"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/main_huodong_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <ImageView
+                    android:layout_margin="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/main_r2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="运动"
+                    android:textColor="#333333"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <RelativeLayout
+                android:id="@+id/main_huodong_5"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <ImageView
+                    android:layout_margin="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/main_r5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="文化"
+                    android:textColor="#333333"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <RelativeLayout
+                android:id="@+id/main_huodong_9"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <ImageView
+                    android:layout_margin="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/main_r9"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="旅游"
+                    android:textColor="#333333"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/main_huodong_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <ImageView
+                    android:layout_margin="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/main_r3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="娱乐"
+                    android:textColor="#333333"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <RelativeLayout
+                android:id="@+id/main_huodong_6"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <ImageView
+                    android:layout_margin="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/main_r6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="商务"
+                    android:textColor="#333333"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <RelativeLayout
+                android:id="@+id/main_huodong_8"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <ImageView
+                    android:layout_margin="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/main_r8"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="其他"
+                    android:textColor="#333333"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

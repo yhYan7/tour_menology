@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context="com.example.administrator.tour_menology.my_fragment_activity.zhuce">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_2"/>
+
+    <Button
+        android:id="@+id/alreadyAcc"
+        android:background="#00000000"
+        android:textColor="#fff"
+        android:textSize="13dp"
+        android:text="已有账号"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@mipmap/logo"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:layout_height="160px">
+
+                <ImageView
+                    android:id="@+id/denglu_img1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:background="@mipmap/phone"/>
+
+                <EditText
+                    android:id="@+id/phoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="160px"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_marginRight="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="#ffffff"
+                    android:layout_toRightOf="@+id/denglu_img1"
+                    android:hint="请输入您的手机号"
+                    android:textColor="#999999"
+                    android:textSize="13dp"/>
+
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80px"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/denglu_img1"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/denglu_yanzheng"
+                    android:text="获取验证码"
+                    android:textColor="#fff"
+                    android:textSize="13dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="1px"
+                    android:background="#e5e5e5"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/denglu_img2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:background="@mipmap/yanzheng"/>
+
+                <EditText
+                    android:id="@+id/yanzheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="160px"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_marginRight="50dp"
+                    android:layout_toRightOf="@+id/denglu_img2"
+                    android:layout_marginLeft="10dp"
+                    android:hint="请输入验证码"
+                    android:background="#ffffff"
+                    android:layout_centerVertical="true"
+                    android:textColor="#999999"
+                    android:textSize="13dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="1px"
+                    android:background="#e5e5e5"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/denglu_img3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:background="@mipmap/password_1"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="160px"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_marginRight="50dp"
+                    android:background="#ffffff"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/denglu_img3"
+                    android:hint="请设置您的密码"
+                    android:textColor="#999999"
+                    android:textSize="13dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="1px"
+                    android:background="#e5e5e5"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/denglu_img4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:background="@mipmap/password_2"/>
+
+                <EditText
+                    android:id="@+id/pwdagain"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="50dp"
+                    android:layout_height="160px"
+                    android:background="#ffffff"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:inputType="textPassword"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/denglu_img4"
+                    android:hint="再一次确认您的密码"
+                    android:textColor="#999999"
+                    android:textSize="13dp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/zhuce"
+                android:background="@drawable/denglu_yanzheng"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:text="注册"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+
+            <TextView
+                android:layout_marginTop="44px"
+                android:textSize="28px"
+                android:textColor="#666666"
+                android:text="其他账号登录"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/qqlogin"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="0px"
+                    android:background="@mipmap/qq"/>
+
+                <Button
+                    android:id="@+id/wechatlogin"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="128px"
+                    android:background="@mipmap/weixin"/>
+
+                <Button
+                    android:id="@+id/weibologin"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="128px"
+                    android:background="@mipmap/weibo"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

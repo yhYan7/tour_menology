@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.tour_menology.Activity.main_fabu_xiangqing">
+
+    <include layout="@layout/toolbar_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#e5e5e5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/main_fabu_xq_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/main_fabu_xq_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/main_fabu_xq_img"
+                android:text="上海市旅游局"
+                android:textColor="#333333"
+                />
+
+            <TextView
+                android:id="@+id/main_fabu_xq_guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/main_fabu_xq_img"
+                android:layout_alignLeft="@+id/main_fabu_xq_title"
+                android:layout_alignStart="@+id/main_fabu_xq_title"
+                android:layout_marginTop="5dp"
+                android:text="23"
+                android:textColor="#999999"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/main_fabu_xq_img"
+                android:layout_toEndOf="@+id/main_fabu_xq_guanzhu"
+                android:layout_toRightOf="@+id/main_fabu_xq_guanzhu"
+                android:text="人关注"
+                android:textColor="#999999"/>
+
+
+            <Button
+                android:id="@+id/guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/fabufang_guanzhu"
+                android:text="已关注"
+                android:textColor="#999999"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/jguanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/denglu_yanzheng"
+                android:text="+关注"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#e5e5e5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/jianjie"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:text="发布方简介"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/main_fabu_xq_jianjie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="暂无简介"
+            android:textColor="#999999"/>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="80px"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@drawable/denglu_button">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/pinpai"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toEndOf="@+id/imageView3"-->
+                <!--android:layout_toRightOf="@+id/imageView3"-->
+                <!--android:text="进入品牌专区"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="28px"-->
+                <!--android:textStyle="bold"/>-->
+        <!--</RelativeLayout>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#e5e5e5"/>
+
+        <include layout="@layout/fabu_button"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5"/>
+
+        <com.xiaosu.pulllayout.PullLayout
+            android:id="@+id/huodong_pulllayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#e5e5e5">
+
+            <com.example.administrator.tour_menology.date.HeiListView
+                android:id="@+id/huodong_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#e5e5e5">
+
+            </com.example.administrator.tour_menology.date.HeiListView>
+
+        </com.xiaosu.pulllayout.PullLayout>
+
+
+        <LinearLayout
+            android:id="@+id/pinlun_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/pinglun_edit"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edxt"
+                android:enabled="true"
+                android:gravity="top"
+                android:hint="请输入您要评论的内容"
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:textColor="#999999"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="100dp"
+                    android:text="限140字"/>
+
+                <Button
+                    android:id="@+id/pinglun_fab"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/denglu_yanzheng"
+                    android:text="发表"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="全部评论"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pinglun_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="暂无评论"/>
+
+                <ListView
+                    android:id="@+id/pinglun_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

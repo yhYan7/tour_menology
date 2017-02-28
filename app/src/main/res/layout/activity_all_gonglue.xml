@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.tour_menology.Activity.jingcaiyouxi">
+
+<include layout="@layout/toolbar_2"/>
+
+    <com.xiaosu.pulllayout.PullLayout
+        android:id="@+id/gonglue_polllayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:divider="#e5e5e5">
+
+        <ListView
+            android:id="@+id/gonglue_listview"
+            android:divider="#fff"
+            android:dividerHeight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.xiaosu.pulllayout.PullLayout>
+</LinearLayout>

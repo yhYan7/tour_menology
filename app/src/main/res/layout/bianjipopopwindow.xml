@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#fff"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/pw_shezhi"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <ImageView
+                android:background="@mipmap/shezhi"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="  游记设置     "
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pw_jieshu"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <ImageView
+                android:background="@mipmap/jieshu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="  结束游记     "
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pw_shanchu"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <ImageView
+                android:background="@mipmap/shanchu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="  删除游记     "
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

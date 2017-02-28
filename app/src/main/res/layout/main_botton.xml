@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2c2c2e"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+    <RadioButton
+        android:id="@+id/tab1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:drawableTop="@drawable/tab1_img"
+        android:gravity="center"
+        android:text="首页"
+        android:textColor="@drawable/tab_textcolor"/>
+
+    <RadioButton
+        android:id="@+id/tab2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/tab2_img"
+        android:gravity="center"
+        android:text="日历"
+        android:textColor="@drawable/tab_textcolor"/>
+
+
+    <RadioButton
+        android:id="@+id/tab3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/tab3_img"
+        android:gravity="center"
+        android:text="发现"
+        android:textColor="@drawable/tab_textcolor"/>
+
+
+    <RadioButton
+        android:id="@+id/tab4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/tab4_img"
+        android:gravity="center"
+        android:text="我的"
+        android:textColor="@drawable/tab_textcolor"/>
+</RadioGroup>

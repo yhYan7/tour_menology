@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my_fragment_activity.haoyoudongtai">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_2"/>
+
+    <com.xiaosu.pulllayout.PullLayout
+        android:id="@+id/mydongtai_pulllayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include2"
+        >
+
+        <ListView
+            android:id="@+id/mydongtai_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </com.xiaosu.pulllayout.PullLayout>
+</RelativeLayout>

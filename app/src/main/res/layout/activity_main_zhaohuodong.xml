@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.tour_menology.Activity.main_zhaohuodong_Activity">
+
+
+
+    <WebView
+        android:layout_marginTop="5dp"
+        android:id="@+id/webview_zhd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/toolbar_2"/>
+
+    <ImageButton
+        android:id="@+id/calendar_img"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/cal_icon"/>
+
+</RelativeLayout>

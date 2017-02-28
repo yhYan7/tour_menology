@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:text="全天"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/item_tour_title"
+        android:id="@+id/item_tour_date"/>
+    <TextView
+        android:text="-"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/item_tour_date"
+        android:layout_alignTop="@+id/item_tour_title"/>
+    <TextView
+        android:text="全天"
+        android:textSize="15dp"
+        android:maxLength="13"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/item_tour_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/item_tour_title"
+        android:id="@+id/item_tour_date2"/>
+
+    <TextView
+        android:text="vsdfg"
+        android:maxLength="13"
+        android:id="@+id/item_tour_title"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/item_tour_date2"
+        android:layout_toEndOf="@+id/item_tour_date2"/>
+
+
+    <ImageView
+        android:layout_marginRight="5dp"
+        android:id="@+id/item_tour_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>

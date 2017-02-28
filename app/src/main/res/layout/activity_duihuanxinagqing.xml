@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_duihuanxinagqing"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.tour_menology.Activity.duihuanxinagqing">
+
+    <include layout="@layout/toolbar_2"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/dhxq_img"
+            android:scaleType="fitXY"
+            android:background="@mipmap/moren2"
+            android:layout_margin="10dp"
+            android:layout_width="120dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/dhxq_title"
+            android:layout_toEndOf="@+id/dhxq_img"
+            android:layout_alignTop="@+id/dhxq_img"
+            android:textSize="18dp"
+            android:textColor="#333333"
+            android:text="天津测试门票"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_alignBottom="@+id/dhxq_img"
+            android:layout_toEndOf="@+id/dhxq_img"
+            android:text="积分"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dhxq_jifen"
+            android:layout_alignBottom="@+id/dhxq_img"
+            android:layout_toEndOf="@+id/dhxq_img"
+            android:text="500"
+            android:layout_marginLeft="40dp"
+            android:textSize="16dp"
+            android:textColor="#fe8149"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="兑换数量"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dhxq_duihuansl"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="兑换数量"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="兑换码"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dhxq_duihuanma"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="兑换数量"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="兑换时间"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dhxq_date"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="兑换数量"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="有效期"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dhxq_date2"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="兑换数量"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+<TextView
+    android:background="#e5e5e5"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="状态"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dhxq_zhuangtai"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="兑换数量"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#e5e5e5"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/myyouji_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/moren2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/myyouji_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/myyouji_date"
+        android:textSize="15dp"
+        android:text="XXXX"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/myyouji_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myyouji_img"
+        android:layout_alignLeft="@+id/myyouji_name"
+        android:layout_alignStart="@+id/myyouji_name"
+        android:text="XXX"
+        android:textColor="#666666"/>
+
+    <TextView
+        android:id="@+id/myyouji_tian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/myyouji_date"
+        android:layout_alignBottom="@+id/myyouji_img"
+        android:layout_marginLeft="20dp"
+        android:text="XXX"
+        android:textColor="#666666"
+        />
+
+
+    <TextView
+        android:id="@+id/myyouji_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myyouji_img"
+        android:layout_toRightOf="@+id/myyouji_tian"
+        android:layout_marginLeft="20dp"
+        android:text="XXX"
+        android:textColor="#666666"/>
+
+
+    <!-- <ImageView
+         android:layout_width="10dp"
+         android:layout_height="20dp"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="15dp"
+         android:background="@mipmap/right"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_below="@+id/myyouji_img"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/myyouji_chakanimg"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/myyouji1"/>
+
+            <TextView
+                android:id="@+id/myyouji_chakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/myyouji_chakanimg"
+                android:text="XX"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/myyouji_shoucangimg"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="7dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/myyouji2"/>
+
+
+            <TextView
+                android:id="@+id/myyouji_shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/myyouji_shoucangimg"
+                android:text="XX"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.administrator.tour_menology.Main_Fragment.find_Fragment">
+
+    <include layout="@layout/toolbat_1"/>
+
+    <RelativeLayout
+        android:id="@+id/faxian_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginTop="30px">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@mipmap/find_f1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130px"
+            android:text="找活动"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@mipmap/right"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e5e5e5"/>
+
+    <RelativeLayout
+        android:id="@+id/faxian_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginTop="30px">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@mipmap/find_f2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130px"
+            android:text="找发布方"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@mipmap/right"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e5e5e5"/>
+
+    <RelativeLayout
+        android:id="@+id/faxian_btn3"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginTop="30px">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@mipmap/find_f3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130px"
+            android:text="精彩游记"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@mipmap/right"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e5e5e5"/>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/faxian_btn4"-->
+    <!--android:layout_marginTop="30px"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="120px">-->
+
+    <!--<ImageView-->
+    <!--android:background="@mipmap/find_f4"-->
+    <!--android:layout_marginLeft="30px"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_width="50px"-->
+    <!--android:layout_height="50px"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_marginLeft="130px"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:textSize="16dp"-->
+    <!--android:textColor="#666666"-->
+    <!--android:text="扫码直达"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginRight="30px"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@mipmap/right"-->
+    <!--android:layout_width="10dp"-->
+    <!--android:layout_height="20dp"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<TextView-->
+    <!--android:background="#e5e5e5"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"/>-->
+
+    <RelativeLayout
+    android:id="@+id/faxian_btn4"
+    android:layout_marginTop="30px"
+    android:layout_width="match_parent"
+    android:layout_height="120px">
+
+    <ImageView
+    android:background="@mipmap/find_f5"
+    android:layout_marginLeft="30px"
+    android:layout_centerVertical="true"
+    android:layout_width="50px"
+    android:layout_height="50px"/>
+
+    <TextView
+    android:layout_marginLeft="130px"
+    android:layout_centerVertical="true"
+    android:textSize="16dp"
+    android:textColor="#666666"
+    android:text="附近活动"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <ImageView
+    android:layout_marginRight="30px"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:background="@mipmap/right"
+    android:layout_width="10dp"
+    android:layout_height="20dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

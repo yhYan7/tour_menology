@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/yuanjiao_bai"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/dialog_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="#333333"
+            android:textSize="18dp"
+            android:text="恭喜你完成今日任务"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:background="@mipmap/shou"
+            android:layout_marginTop="10dp"
+            android:layout_width="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="70dp"/>
+        <TextView
+            android:id="@+id/dialog_text"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="更多任务还在个人中心等你呦"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/dialog_btn_lq"
+            android:background="@drawable/denglu_yanzheng"
+            android:textColor="#fff"
+            android:text="领取奖励"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+        <ImageButton
+            android:id="@+id/dialog_btn"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/x"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:background="@mipmap/moren"
+            android:id="@+id/youjixq_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+
+        <com.example.administrator.tour_menology.date.CircleImageView
+            android:id="@+id/youjixq_img_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/youjixq_img"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="-30dp"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/youjixq_shoucang"
+            android:layout_toLeftOf="@+id/youjixq_shoucang"
+            android:layout_toStartOf="@+id/youjixq_shoucang"
+            android:background="@mipmap/xing"/>
+
+        <TextView
+            android:id="@+id/youjixq_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/youjixq_img_2"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/youjixq_img_2"
+            android:layout_toStartOf="@+id/youjixq_img_2"
+            android:text="2"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+
+        <TextView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView8"
+            android:layout_toEndOf="@+id/youjixq_img_2"
+            android:layout_toRightOf="@+id/youjixq_img_2"
+            android:text="by: "
+            android:textSize="16dp"/>
+
+        <TextView
+
+            android:id="@+id/youjixq_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/youjixq_img_2"
+            android:layout_toEndOf="@+id/imageView9"
+            android:layout_toRightOf="@+id/imageView9"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/youjixq_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#333333"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/youjixq_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="|"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/youjixq_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView16"
+            android:layout_toLeftOf="@+id/textView16"
+            android:layout_toStartOf="@+id/textView16"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/youjixq_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView16"
+            android:layout_toEndOf="@+id/textView16"
+            android:layout_toRightOf="@+id/textView16"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/youjixq_date2"
+            android:layout_toEndOf="@+id/youjixq_date2"
+            android:layout_toRightOf="@+id/youjixq_date2"
+            android:text=" 天 |"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/youjixq_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView17"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/textView17"
+            android:layout_toRightOf="@+id/textView17"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

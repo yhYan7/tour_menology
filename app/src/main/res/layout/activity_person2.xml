@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.administrator.tour_menology.my_fragment_activity.person2">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_2"/>
+
+    <Button
+        android:id="@+id/p2_save"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#33CC66"
+        android:text="保存"
+        android:textColor="#ffffff"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/p2_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint=""
+                    android:background="#ffffff"
+                    android:textColor="#999999"
+                    android:textSize="15dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="1px"
+                    android:background="#e5e5e5"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="50dp"
+                android:text="填写信条，彰显个性。"
+                android:textSize="13dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

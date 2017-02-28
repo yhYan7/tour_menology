@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/zhoubian_img"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/moren2"/>
+
+        <TextView
+            android:id="@+id/zhoubian_title"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:background="#70000000"
+            android:paddingLeft="10dp"
+            android:text="天津之眼"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#e5e5e5">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="原价¥"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/zhoubian_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55dp"
+            android:text="135"
+            android:textColor="#666666"
+            android:textSize="16dp"/>
+
+
+        <TextView
+            android:id="@+id/zhoubian_xian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="13"
+            android:textColor="#fe8149"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:text="现价: "
+            android:textColor="#fe8149"
+            android:textSize="16dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

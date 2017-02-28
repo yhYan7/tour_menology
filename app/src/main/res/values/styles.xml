@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <declare-styleable name="CircularImage">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <style name="weekName">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <declare-styleable name="ArcMenu">
+        <attr name="position"/>
+        <attr name="radius"/>
+    </declare-styleable>
+
+    <attr name="position">
+        <enum name="left_top" value="0"/>
+        <enum name="right_top" value="1"/>
+        <enum name="right_bottom" value="2"/>
+        <enum name="left_bottom" value="3"/>
+    </attr>
+    <attr name="radius" format="dimension"></attr>
+
+    <string-array name="time">
+        <item>时间</item>
+        <item>即将开始</item>
+        <item>三天内</item>
+        <item>最近一周</item>
+        <item>最近一月</item>
+        <item>自定义</item>
+    </string-array>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#FFF</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <string-array name="zhuti">
+        <item>主题</item>
+        <item>生活</item>
+        <item>运动</item>
+        <item>娱乐</item>
+        <item>文化</item>
+        <item>社交</item>
+        <item>商务</item>
+        <item>亲子</item>
+        <item>旅游</item>
+    </string-array>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

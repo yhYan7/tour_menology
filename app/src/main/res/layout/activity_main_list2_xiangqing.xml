@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    android:orientation="vertical"
+    tools:context="com.example.administrator.tour_menology.Activity.main_list2_xiangqing">
+<include layout="@layout/toolbar_2"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/main_List2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="青岛北宅樱桃节本周末开启,的发送接口返回数据库更健康含金量的萨芬看"
+                android:textColor="#333333"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数据来源:"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/main_list2_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv1"
+                    android:text="青岛旅游政务网"
+                    android:textColor="#666666"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布时间:"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/main_List2_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv12"
+                    android:text="2016.05.10"
+                    android:textColor="#666666"/>
+
+            </RelativeLayout>
+
+            <WebView
+                android:layout_marginTop="15dp"
+                android:id="@+id/main_list2_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </WebView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

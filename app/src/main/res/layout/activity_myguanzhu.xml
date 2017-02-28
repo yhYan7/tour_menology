@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my_fragment_activity.myguanzhu">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_2"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/hd_bianji"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="#33CC66"-->
+        <!--android:text="编辑"-->
+        <!--android:textColor="#ffffff"-->
+        <!--/>-->
+
+    <com.xiaosu.pulllayout.PullLayout
+        android:id="@+id/my_guanzhu_pulllayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include2"
+        >
+
+        <ListView
+            android:id="@+id/myguanzhu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </com.xiaosu.pulllayout.PullLayout>
+</RelativeLayout>

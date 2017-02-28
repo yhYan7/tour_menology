@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.tour_menology.Activity.bianjiyj">
+
+
+    <include layout="@layout/toolbar_2"
+        android:id="@+id/include10"/>
+
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/more"
+        android:layout_width="25dp"
+        android:layout_height="30dp"/>
+
+    <ListView
+        android:id="@+id/bianjiyj_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include10"
+        android:layout_above="@+id/linearLayout3">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:id="@+id/adyj_1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="25dp"
+                android:background="@mipmap/writesj"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_height="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="写随记"
+                android:textSize="16dp"
+                android:textColor="#34bcec"
+                android:layout_marginLeft="55dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adyj_2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#34bcec"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="25dp"
+                android:background="@mipmap/bofang"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_height="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="预览"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="55dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/adyj_3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="25dp"
+                android:background="@mipmap/chuantp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_height="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="传美图"
+                android:textSize="16dp"
+                android:textColor="#34bcec"
+                android:layout_marginLeft="55dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

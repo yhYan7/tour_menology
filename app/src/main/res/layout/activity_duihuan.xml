@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_duihuan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.tour_menology.Activity.duihuan">
+
+
+    <include
+        android:id="@+id/include15"
+        layout="@layout/toolbar_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include15"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/duihuan_img"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/moren2"/>
+
+            <TextView
+                android:id="@+id/duihuan_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/duihuan_img"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/duihuan_img"
+                android:text="天津欢乐谷门票"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/duihuan_img"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/duihuan_img"
+                android:text="剩余: "
+                android:textColor="#666666"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/duihuan_shengyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/duihuan_img"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/duihuan_img"
+                android:text="123  "
+                android:textColor="#666666"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/duihuan_img"
+                android:text="积分: "
+                android:textColor="#fe8149"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/duihuan_jifen_dan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/duihuan_img"
+                android:text="11000 "
+                android:textColor="#fe8149"
+                android:textSize="16dp"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#e5e5e5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="兑换数量"
+                android:textColor="#333333"
+                android:textSize="18dp"/>
+
+
+            <Button
+                android:id="@+id/duihuan_btn_jian"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:background="@drawable/edxt"
+                android:text="一"/>
+
+            <TextView
+                android:id="@+id/duihuan_shuliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="150dp"
+                android:text="1"
+                android:textColor="#333333"
+                android:textSize="16dp"/>
+
+
+            <Button
+                android:id="@+id/duihuan_btn_jia"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="190dp"
+                android:background="@drawable/edxt"
+                android:text="十"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="兑换方式"
+                android:textColor="#333333"
+                android:textSize="18dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:text="积分"
+                android:textColor="#fe8149"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/duihuan_jifen_he"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="140dp"
+                android:text="1000"
+                android:textColor="#fe8149"
+                android:textSize="16dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#e5e5e5"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="取票人"
+                android:textColor="#333333"
+                android:textSize="18dp"/>
+
+
+            <EditText
+                android:id="@+id/duihuan_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:hint="请填写取票人姓名"
+                android:textColor="#999999"
+                android:textSize="16dp"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="手机号"
+                android:textColor="#333333"
+                android:textSize="18dp"/>
+
+
+            <EditText
+                android:id="@+id/duihuan_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:hint="商品信息将发送至此号码"
+                android:textColor="#999999"
+                android:textSize="16dp"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="身份证号"
+                android:textColor="#333333"
+                android:textSize="18dp"/>
+
+
+            <EditText
+                android:id="@+id/duihuan_shenfenz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:hint="可以使用身份证验证"
+                android:textColor="#999999"
+                android:textSize="16dp"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ff9913"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:text="订单总额:"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+          />
+
+        <TextView
+            android:id="@+id/duihuan_jifen_he2"
+            android:layout_marginLeft="160dp"
+            android:layout_centerVertical="true"
+            android:text="1000"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/duihuan_btn_tijiao"
+            android:textColor="#fff"
+            android:text="提交订单"
+            android:background="@drawable/denglu_button"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</RelativeLayout>
